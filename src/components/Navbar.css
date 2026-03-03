@@ -1,0 +1,208 @@
+/* ========================================
+   Tubelight Navbar
+   ======================================== */
+
+/* Logo inside the pill */
+.tubenav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem 0.25rem 0.35rem;
+  flex-shrink: 0;
+}
+
+.tubenav__logo img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Outer wrapper — centered, floating */
+.tubenav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  /* Desktop: top, Mobile: bottom */
+  top: auto;
+  bottom: 0;
+  padding-bottom: 1rem;
+}
+
+/* The pill container */
+.tubenav__pill {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.3rem;
+  border-radius: 9999px;
+  background: rgba(5, 5, 5, 0.45);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Individual link */
+.tubenav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  padding: 0.45rem 0.85rem;
+  border-radius: 9999px;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.tubenav__link:hover {
+  color: var(--red-400);
+}
+
+.tubenav__link--active {
+  color: var(--red-400);
+  background: rgba(220, 38, 38, 0.06);
+}
+
+/* Text labels always visible */
+.tubenav__label {
+  display: inline;
+}
+
+.tubenav__icon {
+  display: none;
+}
+
+/* ---------- Lamp indicator ---------- */
+.tubenav__lamp {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(220, 38, 38, 0.05);
+  z-index: -1;
+  overflow: visible;
+}
+
+/* The solid bar on top */
+.tubenav__lamp-bar {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 3px;
+  background: var(--red-500);
+  border-radius: 9999px 9999px 0 0;
+}
+
+/* Glow layers */
+.tubenav__lamp-glow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 9999px;
+}
+
+.tubenav__lamp-glow--1 {
+  width: 3rem;
+  height: 1.5rem;
+  top: -0.6rem;
+  background: rgba(220, 38, 38, 0.18);
+  filter: blur(10px);
+}
+
+.tubenav__lamp-glow--2 {
+  width: 2rem;
+  height: 1.5rem;
+  top: -0.35rem;
+  background: rgba(220, 38, 38, 0.15);
+  filter: blur(8px);
+}
+
+.tubenav__lamp-glow--3 {
+  width: 1rem;
+  height: 1rem;
+  top: -0.1rem;
+  background: rgba(220, 38, 38, 0.12);
+  filter: blur(5px);
+}
+
+/* ---------- Desktop (≥768px) ---------- */
+@media (min-width: 768px) {
+  .tubenav {
+    top: 0;
+    bottom: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 0;
+  }
+
+  .tubenav__label {
+    display: inline;
+  }
+
+  .tubenav__icon {
+    display: none;
+  }
+
+  .tubenav__link {
+    padding: 0.45rem 0.85rem;
+  }
+
+  /* Lamp on top for top navbar */
+  .tubenav__lamp-bar {
+    top: -2px;
+  }
+}
+
+/* ---------- Mobile styling ---------- */
+@media (max-width: 767px) {
+  .tubenav {
+    max-width: calc(100vw - 1.5rem);
+  }
+
+  .tubenav__pill {
+    max-width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .tubenav__link {
+    padding: 0.55rem 0.7rem;
+    font-size: 0.7rem;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .tubenav__link--mobile-hide {
+    display: none;
+  }
+
+  .tubenav__logo {
+    padding: 0.2rem 0.3rem 0.2rem 0.2rem;
+  }
+
+  .tubenav__logo img {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+  }
+}
+
+/* ---------- Very small screens ---------- */
+@media (max-width: 400px) {
+  .tubenav__link {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.65rem;
+  }
+
+  .tubenav__pill {
+    gap: 0;
+  }
+}

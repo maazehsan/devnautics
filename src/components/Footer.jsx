@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { navLinks, footerLinks } from '../data/siteData';
 import './Footer.css';
 
@@ -33,9 +33,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand-col">
-            <a href="/home" className="footer__brand" aria-label="DevNautics Home">
-              <img src="/images/logo2.jpeg" alt="DevNautics" className="footer__logo-img" />
-            </a>
+            <Link to="/home" className="footer__brand" aria-label="DevNautics Home">
+              <img src={new URL('/images/logo2.jpeg', import.meta.url).href} alt="DevNautics" className="footer__logo-img" />
+            </Link>
             <a href="mailto:hello@devnautics.io" className="footer__email">
               hello@devnautics.io
             </a>

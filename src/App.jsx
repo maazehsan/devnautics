@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="app">
         {/* Grain texture overlay */}
         <div className="grain" aria-hidden="true" />

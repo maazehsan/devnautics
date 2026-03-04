@@ -73,9 +73,9 @@ export default function Navbar() {
     <header className="tubenav" role="banner">
       <nav className="tubenav__pill" aria-label="Main navigation">
         {/* Logo inside the pill */}
-        <a href="/" className="tubenav__logo" aria-label="DevNautics Home">
-          <img src="/images/logo1.png" alt="DevNautics" />
-        </a>
+        <Link to="/home" className="tubenav__logo" aria-label="DevNautics Home">
+          <img src={new URL('/images/logo1.png', import.meta.url).href} alt="DevNautics" />
+        </Link>
         {navLinks.map((link) => {
           const isActive = activeTab === link.label;
           /* Hide Home & Testimonials on mobile */

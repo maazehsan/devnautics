@@ -54,6 +54,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overscroll-behavior-x: none;
 }
 
 body {
@@ -65,6 +66,9 @@ body {
   background-color: var(--bg-primary);
   min-width: 320px;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+  max-width: 100%;
 }
 
 img,

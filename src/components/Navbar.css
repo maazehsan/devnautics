@@ -165,7 +165,7 @@
 /* ---------- Mobile styling ---------- */
 @media (max-width: 767px) {
   .tubenav {
-    max-width: calc(100vw - 1.5rem);
+    max-width: calc(100% - 1.5rem);
   }
 
   .tubenav__pill {

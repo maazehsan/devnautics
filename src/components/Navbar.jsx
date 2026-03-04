@@ -14,7 +14,7 @@ export default function Navbar() {
 
   /* Update active tab based on scroll position - ONLY on home page */
   useEffect(() => {
-    if (location.pathname !== '/home') {
+    if (location.pathname !== '/') {
       setActiveTab(''); // No active tab if not on home
       return;
     }
@@ -61,8 +61,8 @@ export default function Navbar() {
     isClickScrolling.current = true;
     setTimeout(() => { isClickScrolling.current = false; }, 900);
 
-    if (location.pathname !== '/home') {
-      navigate('/home', { replace: false });
+    if (location.pathname !== '/') {
+      navigate('/', { replace: false });
       setTimeout(scrollToSection, 120);
     } else {
       scrollToSection();
@@ -73,7 +73,7 @@ export default function Navbar() {
     <header className="tubenav" role="banner">
       <nav className="tubenav__pill" aria-label="Main navigation">
         {/* Logo inside the pill */}
-        <Link to="/home" className="tubenav__logo" aria-label="DevNautics Home">
+        <Link to="/" className="tubenav__logo" aria-label="DevNautics Home">
           <img src={new URL('/images/logo1.png', import.meta.url).href} alt="DevNautics" />
         </Link>
         {navLinks.map((link) => {

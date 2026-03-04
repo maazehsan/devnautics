@@ -20,8 +20,8 @@ export default function Footer() {
     e.preventDefault();
 
     const go = () => scrollToTarget(target);
-    if (location.pathname !== '/home') {
-      navigate('/home');
+    if (location.pathname !== '/') {
+      navigate('/');
       setTimeout(go, 120);
     } else {
       go();
@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand-col">
-            <Link to="/home" className="footer__brand" aria-label="DevNautics Home">
+            <Link to="/" className="footer__brand" aria-label="DevNautics Home">
               <img src={new URL('/images/logo2.jpeg', import.meta.url).href} alt="DevNautics" className="footer__logo-img" />
             </Link>
             <a href="mailto:hello@devnautics.io" className="footer__email">

@@ -1,11 +1,11 @@
 export const navLinks = [
-  { label: 'Home', href: '/home', target: '#hero' },
-  { label: 'Services', href: '/home', target: '#services' },
-  { label: 'Process', href: '/home', target: '#process' },
-  { label: 'Work', href: '/home', target: '#portfolio' },
-  { label: 'Testimonials', href: '/home', target: '#testimonials' },
-  { label: 'Pricing', href: '/home', target: '#pricing' },
-  { label: 'Contact', href: '/home', target: '#contact' },
+  { label: 'Home', href: '/', target: '#hero' },
+  { label: 'Services', href: '/', target: '#services' },
+  { label: 'Process', href: '/', target: '#process' },
+  { label: 'Work', href: '/', target: '#portfolio' },
+  { label: 'Testimonials', href: '/', target: '#testimonials' },
+  { label: 'Pricing', href: '/', target: '#pricing' },
+  { label: 'Contact', href: '/', target: '#contact' },
 ];
 
 export const services = [
@@ -213,16 +213,16 @@ export const pricingPlans = [
 
 export const footerLinks = {
   company: [
-    { label: 'About', href: '/home' },
-    { label: 'Careers', href: '/home' },
-    { label: 'Blog', href: '/home' },
-    { label: 'Contact', href: '/home', target: '#contact' },
+    { label: 'About', href: '/' },
+    { label: 'Careers', href: '/' },
+    { label: 'Blog', href: '/' },
+    { label: 'Contact', href: '/', target: '#contact' },
   ],
   services: [
-    { label: 'Web Development', href: '/home', target: '#services' },
-    { label: 'SEO', href: '/home', target: '#services' },
-    { label: 'Landing Pages', href: '/home', target: '#services' },
-    { label: 'Maintenance', href: '/home', target: '#services' },
+    { label: 'Web Development', href: '/', target: '#services' },
+    { label: 'SEO', href: '/', target: '#services' },
+    { label: 'Landing Pages', href: '/', target: '#services' },
+    { label: 'Maintenance', href: '/', target: '#services' },
   ],
   social: [
     { label: 'Instagram', href: '#' },

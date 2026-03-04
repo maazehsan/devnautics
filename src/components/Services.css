@@ -36,6 +36,12 @@
   height: 100%;
 }
 
+/* Allow grid children to shrink on small screens (prevents overflow) */
+.services__card-wrap,
+.services__card {
+  min-width: 0;
+}
+
 .services__card {
   position: relative;
   height: 100%;

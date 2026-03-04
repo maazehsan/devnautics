@@ -44,6 +44,12 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   margin-top: 3.5rem;
+  overflow: hidden;
+}
+
+/* Prevent ScrollReveal wrapper divs from overflowing the grid cell */
+.why__grid > div {
+  min-width: 0;
 }
 
 .why__card {
@@ -54,6 +60,11 @@
   position: relative;
   overflow: hidden;
   transition: border-color 0.35s ease;
+}
+
+/* Allow cards to shrink inside grid and avoid overflow on small screens */
+.why__card {
+  min-width: 0;
 }
 
 .why__card:hover {

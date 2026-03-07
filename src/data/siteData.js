@@ -96,21 +96,21 @@ export const processSteps = [
 export const portfolioItems = [
   {
     category: 'Portfolio',
-    title: 'Maaz',
+    title: 'Personal Portfolio',
     description: 'Personal portfolio showcasing creative work with stunning visuals and seamless performance.',
     image: new URL('/images/portfolio.png', import.meta.url).href,
     outcome: 'Premium Design',
   },
   {
-    category: 'Cafe',
-    title: 'EightyPlus',
+    category: 'Landing Page',
+    title: 'Cafe',
     description: 'Modern cafe website with elegant aesthetics and intuitive ordering experience.',
     image: new URL('/images/cafe.png', import.meta.url).href,
     outcome: 'Elevated Brand',
   },
   {
-    category: 'Restaurant',
-    title: 'Bagh',
+    category: 'Website',
+    title: 'Restaurant',
     description: 'Sophisticated restaurant site featuring immersive visuals and smooth reservations.',
     image: new URL('/images/restaurant.png', import.meta.url).href,
     outcome: 'Increased Bookings',
@@ -163,7 +163,7 @@ export const testimonials = [
 export const pricingPlans = [
   {
     name: 'Starter',
-    price: '$200',
+    price: '$250',
     period: 'project',
     description: 'For small businesses that need a professional web presence fast.',
     features: [

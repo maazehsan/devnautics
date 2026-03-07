@@ -36,8 +36,8 @@ export default function Footer() {
             <Link to="/" className="footer__brand" aria-label="DevNautics Home">
               <img src={new URL('/images/logo2.jpeg', import.meta.url).href} alt="DevNautics" className="footer__logo-img" />
             </Link>
-            <a href="mailto:hello@devnautics.io" className="footer__email">
-              hello@devnautics.io
+            <a href="mailto:info@devnautics.studio" className="footer__email">
+              info@devnautics.studio
             </a>
           </div>
 

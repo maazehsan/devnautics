@@ -95,14 +95,6 @@ export const processSteps = [
 
 export const portfolioItems = [
   {
-    category: 'Portfolio',
-    title: 'Personal Portfolio',
-    description: 'Personal portfolio showcasing creative work with stunning visuals and seamless performance.',
-    image: new URL('/images/portfolio.png', import.meta.url).href,
-    outcome: 'Premium Design',
-    link: 'https://maazehsan.github.io/',
-  },
-  {
     category: 'Landing Page',
     title: 'BowCoffee',
     description: 'Bow Coffee is a premium artisan café based in Saudi Arabia with two branches and a growing community around quality coffee and warm, intentional spaces.',
@@ -117,6 +109,14 @@ export const portfolioItems = [
     image: new URL('/images/restaurant.png', import.meta.url).href,
     outcome: 'Increased Orders',
     link: 'https://maazehsan.github.io/scrunch',
+  },
+  {
+    category: 'Portfolio',
+    title: 'Personal Portfolio',
+    description: 'Personal portfolio showcasing creative work with stunning visuals and seamless performance.',
+    image: new URL('/images/portfolio.png', import.meta.url).href,
+    outcome: 'Premium Design',
+    link: 'https://maazehsan.github.io/',
   },
 ];
 

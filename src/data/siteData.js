@@ -138,7 +138,7 @@ export const testimonials = [
     },
   },
   {
-    text: 'The Bagh restaurant site captures our essence perfectly. Elegant visuals, seamless reservations, and a design that makes guests hungry to visit.',
+    text: 'The Scrunch website captures our essence perfectly. Elegant visuals, seamless reservations, and a design that makes guests hungry to visit.',
     author: {
       name: 'Scrunch Restaurant',
       handle: '@scrunch',

@@ -1,0 +1,194 @@
+.portfolio-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.portfolio-page__intro {
+  position: relative;
+  z-index: 1;
+  padding: 8.5rem 0 3.5rem;
+}
+
+.portfolio-page__intro-content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-page__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+}
+
+.portfolio-page__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.portfolio-page__list {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 0 6rem;
+}
+
+.portfolio-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.portfolio-page__card-wrap {
+  height: 100%;
+}
+
+.portfolio-page__card {
+  height: 100%;
+  background: rgba(12, 12, 12, 0.88);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-page__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(220, 38, 38, 0.3);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+}
+
+.portfolio-page__image {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(140deg, #0f0f0f 0%, #190909 100%);
+  overflow: hidden;
+}
+
+.portfolio-page__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.portfolio-page__card:hover .portfolio-page__img {
+  transform: scale(1.04);
+}
+
+.portfolio-page__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(140deg, rgba(220, 38, 38, 0.08), rgba(255, 255, 255, 0.04));
+}
+
+.portfolio-page__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1.1rem;
+  background: linear-gradient(to top, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.15));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-page__card:hover .portfolio-page__overlay {
+  opacity: 1;
+}
+
+.portfolio-page__outcome {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--red-400);
+}
+
+.portfolio-page__info {
+  padding: 1.3rem 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.portfolio-page__category {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--red-500);
+  padding: 0.2rem 0.55rem;
+  width: fit-content;
+  border-radius: 4px;
+  background: rgba(220, 38, 38, 0.08);
+}
+
+.portfolio-page__project-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin: 0.1rem 0 0;
+}
+
+.portfolio-page__desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.portfolio-page__project-link {
+  width: fit-content;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid rgba(220, 38, 38, 0.45);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-page__project-link:hover {
+  color: var(--red-400);
+  border-color: var(--red-400);
+}
+
+@media (max-width: 1024px) {
+  .portfolio-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .portfolio-page__intro {
+    padding-top: 7.5rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .portfolio-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-page__list {
+    padding-bottom: 4.2rem;
+  }
+}

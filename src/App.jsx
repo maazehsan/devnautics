@@ -3,6 +3,7 @@ import { useLayoutEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import RequestProject from './pages/RequestProject';
+import PortfolioPage from './pages/PortfolioPage';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -40,6 +41,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/request" element={<RequestProject />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
 
         <Footer />

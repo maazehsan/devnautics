@@ -100,20 +100,23 @@ export const portfolioItems = [
     description: 'Personal portfolio showcasing creative work with stunning visuals and seamless performance.',
     image: new URL('/images/portfolio.png', import.meta.url).href,
     outcome: 'Premium Design',
+    link: 'https://maazehsan.github.io/',
   },
   {
     category: 'Landing Page',
-    title: 'Cafe',
-    description: 'Modern cafe website with elegant aesthetics and intuitive ordering experience.',
+    title: 'BowCoffee',
+    description: 'Bow Coffee is a premium artisan café based in Saudi Arabia with two branches and a growing community around quality coffee and warm, intentional spaces.',
     image: new URL('/images/cafe.png', import.meta.url).href,
     outcome: 'Elevated Brand',
+    link: 'https://maazehsan.github.io/BowCoffee',
   },
   {
     category: 'Website',
-    title: 'Restaurant',
-    description: 'Sophisticated restaurant site featuring immersive visuals and smooth reservations.',
+    title: 'Scrunch',
+    description: 'Scrunch is a fast-growing Mexican food chain operating in the Gulf region, built around bold flavors, street-food culture, and a visual identity that is loud, colorful, and unapologetically expressive.',
     image: new URL('/images/restaurant.png', import.meta.url).href,
-    outcome: 'Increased Bookings',
+    outcome: 'Increased Orders',
+    link: 'https://maazehsan.github.io/scrunch',
   },
 ];
 
@@ -129,16 +132,16 @@ export const testimonials = [
   {
     text: 'Our cafe needed a website that matched our vibe — modern, inviting, and effortless. DevNautics delivered beyond expectations. Customers love it.',
     author: {
-      name: 'EightyPlus Cafe',
-      handle: '@eightyplus',
+      name: 'BowCoffee',
+      handle: '@bowcafe',
       avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
     },
   },
   {
     text: 'The Bagh restaurant site captures our essence perfectly. Elegant visuals, seamless reservations, and a design that makes guests hungry to visit.',
     author: {
-      name: 'Bagh Restaurant',
-      handle: '@bagh',
+      name: 'Scrunch Restaurant',
+      handle: '@scrunch',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
     },
   },

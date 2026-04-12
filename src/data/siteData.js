@@ -167,7 +167,7 @@ export const pricingPlans = [
   {
     name: 'Starter',
     price: '$250',
-    period: 'project',
+    period: 'month',
     description: 'For small businesses that need a professional web presence fast.',
     features: [
       'Up to 5 pages',
@@ -183,7 +183,7 @@ export const pricingPlans = [
   {
     name: 'Growth',
     price: '$700',
-    period: 'project',
+    period: 'month',
     description: 'For scaling businesses that need performance, design, and strategy.',
     features: [
       'Up to 15 pages',
